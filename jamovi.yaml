@@ -1,0 +1,23 @@
+name: AnalisePsicofisiologica
+title: Análise Psicofisiológica da Análise de Código
+version: 1.0.0
+jmvVersion: 2.6.2
+description: Módulo para análise de dados neurofisiológicos e comportamentais, incluindo EDA, ECG, EEG, Eye Tracking e questionários (STAI, SPSES).
+authors:
+  - Jonathon Love
+  - Colaborador: [Seu Nome]
+license: GPL-3
+analyses:
+  - id: analise_psicofisiologica
+    title: Análise Psicofisiológica
+    script: R/analise_psicofisiologica.R
+    ui: ui/analise_psicofisiologica.yaml
+dependencies:
+  - R: >= 4.0
+  - dplyr
+  - readr
+  - ez
+  - lavaan
+  - ggplot2
+  - pracma
+  - signal

@@ -1,0 +1,39 @@
+title: Análise Psicofisiológica
+optionGroups:
+  - name: inputs
+    title: Entradas
+    options:
+      - name: condicao
+        type: Variable
+        title: Condição Experimental
+      - name: eda
+        type: Variable
+        title: EDA Média
+      - name: ecg
+        type: Variable
+        title: ECG HR
+      - name: eeg_alpha
+        type: Variable
+        title: EEG Alpha
+      - name: eeg_beta
+        type: Variable
+        title: EEG Beta
+      - name: eyetracking
+        type: Variable
+        title: Fixações de Eye Tracking
+      - name: stai
+        type: Variable
+        title: STAI Score
+      - name: speses
+        type: Variable
+        title: SPSES Score
+results:
+  - name: summary
+    title: Resumo dos Dados
+    type: Table
+  - name: anova
+    title: Resultados da ANOVA
+    type: Table
+  - name: plot
+    title: Gráfico de Séries Temporais
+    type: Image
