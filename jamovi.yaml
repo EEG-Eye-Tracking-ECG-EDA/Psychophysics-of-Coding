@@ -5,7 +5,7 @@ jmvVersion: 2.6.2
 description: Módulo para análise de dados neurofisiológicos e comportamentais, incluindo EDA, ECG, EEG, Eye Tracking e questionários (STAI, SPSES).
 authors:
   - Jonathon Love
-  - Colaborador: [Seu Nome]
+  - Colaborador: Helio Craveiro Pessoa Jr
 license: GPL-3
 analyses:
   - id: analise_psicofisiologica

@@ -1,0 +1,25 @@
+Package: PsychophysicsOfCoding
+Type: Package
+Title: Análise Psicofisiológica da Análise de Código
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Hélio Craveiro", family = "Pessoa Jr", role = c("cre"),
+           email = "pessoajr@gmail.com"),
+    person(given = "Jonathon", family = "Love", role = "aut",
+           email = "jonathon@jamovi.org")
+)
+Description: Um módulo desenvolvido para o Jamovi que permite a análise de dados psicofisiológicos e comportamentais,
+             incluindo EDA, ECG, EEG, Eye Tracking e questionários como STAI e SPSES, com suporte para ANOVA de medidas repetidas, 
+             análise de séries temporais e visualização de dados.
+Depends: R (>= 3.6), ggplot2, dplyr, readr, ez, pracma, signal
+Imports: 
+    ggplot2,
+    dplyr,
+    readr,
+    ez,
+    pracma,
+    signal
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
