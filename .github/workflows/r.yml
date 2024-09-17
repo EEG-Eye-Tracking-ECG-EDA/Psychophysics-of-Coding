@@ -1,11 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-#
-# See https://github.com/r-lib/actions/tree/master/examples#readme for
-# additional example workflows available for the R community.
-
 name: R
 
 on:
@@ -22,14 +14,15 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        r-version: ['3.6.3', '4.1.1']
+        r-version: ['4.1.1']  # Ajuste para uma versão mais recente e disponível do R
 
     steps:
       - uses: actions/checkout@v4
       - name: Set up R ${{ matrix.r-version }}
-        uses: r-lib/actions/setup-r@f57f1301a053485946083d7a45022b278929a78a
+        uses: r-lib/actions/setup-r@v1  # Uso da versão correta do action
         with:
           r-version: ${{ matrix.r-version }}
+          use-public-rspm: true  # Habilitar uso de repositórios públicos para evitar erros de instalação
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
